@@ -1,0 +1,17 @@
+page-home {
+  h1 {
+    color: color($colors, primary, base);
+  };
+  div {
+    margin: 20px;
+  };
+  ion-content {
+    background-image: url('../../assets/imgs/background-home.jpeg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+  font-family: NATS;
+}

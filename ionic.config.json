@@ -1,0 +1,7 @@
+{
+  "name": "GuardaCostas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
