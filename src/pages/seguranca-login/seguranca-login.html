@@ -1,0 +1,29 @@
+<ion-content >
+  <div class="rectangle" block text-center>
+    <img src="assets/icon/gc.png" width="50" height="50"
+     style="background-color:white; margin:10px 0 10px 0" />
+  </div>
+  <div class="triangle-down">
+  </div>
+  <div padding>
+    <button ion-button full clear icon-left id="initial-button"
+            (click)="voltarLogin()">
+      <ion-icon name="arrow-back"></ion-icon>
+      Log In
+    </button>
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Usuario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Senha</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button block color="light" id="cadastrar-button">
+      Entrar
+    </button>
+  </div>
+</ion-content>

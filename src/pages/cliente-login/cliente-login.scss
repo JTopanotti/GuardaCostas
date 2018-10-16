@@ -1,17 +1,27 @@
-page-home {
-  h1 {
-    color: color($colors, primary, base);
-  };
-  img {
-    //margin-top: 100px;
-  }
+page-cliente-login {
+
   ion-content {
     background: #0191E6 !important;
   }
   font-family: NATS;
 
+  button {
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  #initial-button {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  #cadastrar-button {
+    color: black !important;
+  }
+
   .rectangle{
-    height: 50%;
+    height: 50px;
     width: 100%;
     background-color: white;
   }
@@ -23,4 +33,6 @@ page-home {
   	border-right: 140px solid transparent;
   	border-top: 20px solid white;
   }
+
+
 }
