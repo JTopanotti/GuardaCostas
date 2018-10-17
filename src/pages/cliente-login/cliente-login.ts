@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ClienteService } from '../../services/cliente.service';
+import { ClienteCadastroPage } from '../cliente-cadastro/cliente-cadastro';
 
 @IonicPage()
 @Component({
@@ -23,6 +24,10 @@ export class ClienteLoginPage {
 
   voltarLogin(){
     this.navCtrl.pop();
+  }
+
+  cadastrar(){
+    this.navCtrl.push(ClienteCadastroPage);
   }
 
 }

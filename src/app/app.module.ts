@@ -13,6 +13,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ClienteLoginPage } from '../pages/cliente-login/cliente-login';
 import { SegurancaLoginPage } from '../pages/seguranca-login/seguranca-login';
+import { ClienteCadastroPage } from '../pages/cliente-cadastro/cliente-cadastro';
+import { SegurancaCadastroPage } from '../pages/seguranca-cadastro/seguranca-cadastro';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -24,7 +26,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     ClienteLoginPage,
-    SegurancaLoginPage
+    SegurancaLoginPage,
+    ClienteCadastroPage,
+    SegurancaCadastroPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     ClienteLoginPage,
-    SegurancaLoginPage
+    SegurancaLoginPage,
+    ClienteCadastroPage,
+    SegurancaCadastroPage
   ],
   providers: [
     StatusBar,
