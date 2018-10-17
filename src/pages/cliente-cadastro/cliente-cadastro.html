@@ -4,19 +4,45 @@
   </ion-navbar>
 </ion-header>
 
-<ion-list>
-  <ion-item>
-    <ion-label float>
-      Nome Completo
-    </ion-label>
-    <ion-input type="text">
-    </ion-input>
-  </ion-item>
-</ion-list>
+<ion-content padding>
 
+   <form [formGroup]="validator" (ngSubmit)="cadastrarForm()">
+     <ion-list>
+       <ion-item>
+         <ion-label floating>Nome Completo</ion-label>
+         <ion-input type="text" formControlName="nomeCliente"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label floating>Telefone</ion-label>
+         <ion-input type="text" formControlName="telefoneCliente"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label floating>E-mail</ion-label>
+         <ion-input type="text" formControlName="emailCliente"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label>Data de Nascimento</ion-label>
+         <ion-input type="date" formControlName="dataNascimentoCliente"></ion-input>
+       </ion-item>
+     </ion-list>
 
+     <ion-item-divider></ion-item-divider>
 
-<ion-content>
-
+     <ion-list>
+       <ion-item>
+         <ion-label floating>Username</ion-label>
+         <ion-input type="text" formControlName="usernameCliente"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label floating>Senha</ion-label>
+         <ion-input type="password" formControlName="senhaCliente"></ion-input>
+       </ion-item>
+       <ion-item>
+         <ion-label floating>Confirmar Senha</ion-label>
+         <ion-input type="password" formControlName="confirmarSenhaCliente"></ion-input>
+       </ion-item>
+     </ion-list>
+     <button ion-button  type="submit" [disabled]="!validator.valid">Cadastrar</button>
+   </form>
 
 </ion-content>

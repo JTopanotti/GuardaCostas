@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 /**
  * Generated class for the ClienteCadastroPage page.
@@ -15,11 +16,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ClienteCadastroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  private validator: FormGroup;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder) {
+    this.validator = this.formBuilder.group({
+      nomeCliente: ['', Validators.required],
+      telefoneCliente: ['', Validators.required],
+      emailCliente: ['', Validators.required],
+      dataNascimentoCliente: ['', Validators.required],
+      usernameCliente: ['', Validators.required],
+      senhaCliente: ['', Validators.required],
+      confirmarSenhaCliente: ['', Validators.required]
+    });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClienteCadastroPage');
+  }
+
+  cadastrarForm(){
+    console.log(this.validator.value);
   }
 
 }
